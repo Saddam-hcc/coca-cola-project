@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: "Arimo", sans-serif;
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: aliceblue;
+}
+
+nav #logo {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    margin-left: 80px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    border-color: black;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+main .coca-cola {
+    width: 100px;
+    animation: cola1 2s ease-out;
+}
+@keyframes cola1{
+    from{
+        transform: translateX(700px);
+        
+    }
+    to{
+        transform: translateX(0);
+
+
+    }
+}
+main article p {
+    max-width: 500px;
+    font-size: small;
+}
+main article{
+    animation: art1 2s ease-out;
+}
+@keyframes art1{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+
+main article h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+main article h1 span {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+main article .sec a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f3f3f5;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 150px;
+    border: 3px solid #f3f3f5;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.5s;
+}
+
+.links i {
+    display: flex;
+    font-size: 40px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    animation: cola1 1s ease-out;
+}
+
+main article .sec a:hover {
+    background-color: transparent;
+    color: #ff0000;
+}
+
+@media (max-width:800px) and (min-width:586px) {
+    main {
+        flex-direction: column;
+        height: 60%;
+    }
+    nav ul li a {
+    margin-left: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+    }
+
+@keyframes cola1{
+    from{
+        transform: translatey(700px);
+        
+    }
+    to{
+        transform: translatey(0);
+
+
+    }
+}
+
+    main article h1 {
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    main article p {
+        max-width: 500px;
+        font-size: small;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    main article .sec {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main article .sec a {
+        margin-top: 0;
+    }
+    main .coca-cola {
+    width: 100px;
+    margin: 20px 0;
+}
+.links i{
+    
+    display: inline-block;
+    margin-bottom: 0;
+    margin: 10px;
+   
+}
+}
+
+@media (max-width:586px) and (min-width:100px) {
+   nav ul li a {
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+   }
+   nav #logo {
+    width: 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+    nav {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background-color: aliceblue;
+}
+    
+    
+    main {
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+    }
+
+    main article h1 {
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    main article p {
+        font-size: small;
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+
+    main article .sec {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+
+    }
+
+    main article .sec a {
+        margin-top: 0;
+    }
+    main .coca-cola {
+    width: 100px;
+    margin: 20px 0;
+}
+.links i{
+    display: inline-block;
+    margin-bottom: 0;
+    margin: 10px;
+   
+}
+@keyframes cola1{
+    from{
+        transform: translatey(500px);
+        
+    }
+    to{
+        transform: translatey(0);
+
+
+    }
+}
+
+}
